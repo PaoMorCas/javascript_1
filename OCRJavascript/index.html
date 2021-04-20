@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR recognition</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/desing.css">
+</head>
+<body>
+    <header >
+        <!-- <div style=" position: relative;
+        width: 230px;
+       
+        background-color: white;">
+ <figure style="backgound:blue">
+    <img style="width: 100%;
+    border-radius: 50%;" src="./img/logo.png" alt="logo">
+</figure>
+        </div> -->
+       
+        <h1>
+            <a href="index.html">
+                <figure>
+                    <img src="./img/logo.png" alt="logo">
+                    <!-- <figcaption>hola</figcaption> -->
+                </figure>
+            </a>
+            <a href="index.html">OCR imagenes</a>
+        </h1>
+
+         <nav id="ioMenu">
+             <figure id="showMenu" class="ioMenuMovil" onclick="displayMenu()">
+                 <img src="./img/menu.png" alt="menu">
+             </figure>
+             <div id="card_menu" style="display: none;">
+                <figure id="hideMenu" class="ioMenuMovil" onclick="displayMenu()">
+                    <img src="./img/exit.png" alt="menu">
+                </figure>
+                <figure id="logo_menu">
+                    <img src="./img/centro-costo-active.png" alt="menu">
+                </figure>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="ocrImg.html">Cargar Archivo</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                    <li><a href="login.html">Cerrar sesión</a></li>  
+                </ul>
+             </div>
+        </nav>
+     
+    </header>
+    <aside>
+            
+    </aside>
+    <section>
+      <article>
+
+      </article>
+        <div><p>dfkjlksdaj</p></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+    <footer>
+        <div id="contact">
+            <ul>
+                <li><a>Telefono</a></li>
+                <li><a>Correo</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        function displayMenu(){
+            var menu=document.getElementById("card_menu");
+            console.log(menu);
+            var display=menu.style.display;
+            console.log("STYLOS",display);
+            if(display==="none"){
+                menu.style.display="block";
+            }else{
+                menu.style.display="none";
+            }
+        }
+    </script>
+</body>
+</html>
